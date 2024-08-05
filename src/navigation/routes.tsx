@@ -1,11 +1,11 @@
 import Colors from '../pages/Colors';
-import Home from '../pages/Home';
+import General from '../pages/General';
 import Screens from '../pages/Screens';
 import Spacings from '../pages/Spacings';
 import Typographies from '../pages/Typographies';
 
 export const ROUTES = {
-  home: '/',
+  general: '/',
   colors: '/colors',
   spacings: '/spacings',
   screens: '/screens',
@@ -13,7 +13,7 @@ export const ROUTES = {
 };
 
 const routerChildren = [
-  { path: ROUTES.home, element: <Home /> },
+  { path: ROUTES.general, element: <General /> },
   { path: ROUTES.colors, element: <Colors /> },
   { path: ROUTES.spacings, element: <Spacings /> },
   { path: ROUTES.screens, element: <Screens /> },
