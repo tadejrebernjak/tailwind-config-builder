@@ -9,7 +9,7 @@ const Root: React.FC = () => {
     <div className="max-w-screen flex min-h-screen flex-col bg-gradient-to-tr from-indigo-950 to-sky-950 text-gray-200">
       <Header />
 
-      <div className="mx-auto w-full max-w-5xl flex-1 rounded-3xl border-2 border-gray-700 bg-slate-950 bg-opacity-25">
+      <div className="mx-auto mb-10 w-full max-w-7xl flex-1 rounded-3xl border-2 border-gray-700 bg-slate-950 bg-opacity-25">
         <Navbar />
         <main className="p-5 md:p-10">
           <Outlet />
