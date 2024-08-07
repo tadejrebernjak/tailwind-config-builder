@@ -1,8 +1,8 @@
-import Colors from '../pages/Colors';
-import General from '../pages/General';
-import Screens from '../pages/Screens';
-import Spacings from '../pages/Spacings';
-import Typographies from '../pages/Typographies';
+import Colors from '@/pages/Colors';
+import General from '@/pages/General';
+import Screens from '@/pages/Screens';
+import Spacings from '@/pages/Spacings';
+import Typographies from '@/pages/Typographies';
 
 export const ROUTES = {
   general: '/',

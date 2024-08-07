@@ -1,4 +1,4 @@
-import { ROUTES } from '../../navigation/routes';
+import { ROUTES } from '@/navigation/routes';
 import RouteLink from './RouteLink';
 
 const Navbar: React.FC = () => {

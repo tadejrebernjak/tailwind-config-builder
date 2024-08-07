@@ -1,5 +1,7 @@
-import { Color, ColorVariant } from '../../types/colorsTypes';
-import { formatAttribute } from './configBuilder';
+import { formatAttribute } from '@/utils/config-builder/misc';
+
+import { Color, ColorVariant } from '@/types/colorsTypes';
+import { isEmpty } from '@/utils/arrays';
 
 const mapVariants = (variants: ColorVariant[]) => {
   return variants.map((variant: ColorVariant) => `\n          ${variant.tag}: '${variant.colorCode}'`);
@@ -7,7 +9,7 @@ const mapVariants = (variants: ColorVariant[]) => {
 
 const mapColors = (colors: Color[]) => {
   return colors.map(({ name, variants }: Color) => {
-    if (variants.length === 0) {
+    if (isEmpty(variants)) {
       return '';
     }
 
@@ -21,7 +23,7 @@ const mapColors = (colors: Color[]) => {
 };
 
 const generateColorsConfig = (colors: Color[]) => {
-  if (colors.length === 0) {
+  if (isEmpty(colors)) {
     return '';
   }
 

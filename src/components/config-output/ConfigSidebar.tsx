@@ -14,13 +14,14 @@ const ConfigSidebar: React.FC = () => {
   return (
     <aside
       className={clsx(
-        'bg-vscode fixed right-0 h-screen w-fit origin-right rounded-l-lg border-l-8 border-sky-600 transition-transform',
+        'fixed right-0 h-screen w-fit origin-right rounded-l-lg border-l-8 border-sky-600 bg-vscode transition-transform',
         { 'translate-x-full': !isOpen },
       )}
     >
       <button
         className="absolute -left-16 top-1/2 flex h-16 w-16 -translate-y-1/2 items-center justify-center rounded-l-full bg-sky-600 text-3xl"
         onClick={toggleOpen}
+        aria-label="Open color picker"
       >
         <FaArrowLeft
           className={clsx('transition-transform duration-300', {

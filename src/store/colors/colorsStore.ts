@@ -1,6 +1,6 @@
 import { StoreApi, UseBoundStore, create } from 'zustand';
 
-import { Color } from '../../types/colorsTypes';
+import { Color } from '@/types/colorsTypes';
 
 interface IColorsStore {
   colors: Color[];
